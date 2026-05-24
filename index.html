@@ -102,10 +102,8 @@ html, body { width: 100%; min-width: 0; overflow-x: hidden; }
 
     <div class="cat-tabs" id="cat-tabs">
       <div class="cat-tab active" data-cat="all">전체</div>
+      <div class="cat-tab" data-cat="printer">대형 산업용 프린터</div>
       <div class="cat-tab" data-cat="cutting">평판 컷팅기</div>
-      <div class="cat-tab" data-cat="uv">UV 프린터</div>
-      <div class="cat-tab" data-cat="cnc">CNC 라우터</div>
-      <div class="cat-tab" data-cat="laser">레이저 조각기</div>
     </div>
     <div id="eq-container">
       <div class="eq-status"><div class="spin"></div><br>장비 정보를 불러오는 중...</div>
@@ -147,8 +145,8 @@ html, body { width: 100%; min-width: 0; overflow-x: hidden; }
 </div>
 <script>
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWllaBZimkVZuX2sQoirk2KBuM51M2zq4AHzTLS04rmcbMW8fcy48FD-_X89MWglCgvembNxR-avTS/pub?gid=0&single=true&output=csv';
-const CAT_LABEL = {cutting:'평판 컷팅기',uv:'UV 프린터',cnc:'CNC 라우터',laser:'레이저 조각기'};
-const CAT_EMOJI = {cutting:'✂️',uv:'🖨️',cnc:'⚙️',laser:'🔆'};
+const CAT_LABEL = {printer:'대형 산업용 프린터',cutting:'평판 컷팅기'};
+const CAT_EMOJI = {printer:'🖨️',cutting:'✂️'};
 
 let allEquip = [];
 let activeCat = 'all';
